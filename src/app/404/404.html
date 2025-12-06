@@ -1,0 +1,79 @@
+<p>pagenotfound works!</p>
+<!-- Container -->
+<div class="min-h-screen bg-gradient-to-b from-rose-50 to-pink-100 flex items-center justify-center px-6">
+<div class="relative w-full max-w-xl">
+
+    <div class="flex justify-center mb-6">
+<div class="flex items-center text-6xl font-black text-rose-600 font-'rp2'">
+    <!-- First 4 -->
+    <span class="mr-2 font-rp2">4aa</span>
+
+    <!-- Pokéball as the 0 -->
+    <svg viewBox="0 0 100 100" class="w-20 h-20 mx-1">
+    <!-- Outer circle -->
+    <circle cx="50" cy="50" r="48" class="fill-white stroke-rose-600" stroke-width="6"></circle>
+    <!-- Top half -->
+    <path d="M2 50a48 48 0 0 1 96 0H2z" class="fill-rose-500"></path>
+    <!-- Center band -->
+    <rect x="2" y="46" width="96" height="8" class="fill-rose-700"></rect>
+    <!-- Inner circle -->
+    <circle cx="50" cy="50" r="12" class="fill-white stroke-rose-700" stroke-width="4"></circle>
+    </svg>
+
+    <!-- Last 4 -->
+    <span class="ml-2">4</span>
+</div>
+</div>
+
+
+    <!-- Card -->
+    <div class="bg-white/90 backdrop-blur shadow-xl rounded-2xl border border-rose-200 overflow-hidden">
+    <div class="p-6 sm:p-8">
+        <div class="flex items-start justify-between gap-4">
+        <div>
+            <h1 class="text-5xl font-black tracking-tight text-rose-600">404</h1>
+            <p class="mt-2 text-rose-800 font-semibold">Poké Center says this room doesn’t exist.</p>
+            <p class="mt-1 text-rose-700/80">
+            The hallway you’re looking for moved. Let’s get you healed up and back on the right path.
+            </p>
+        </div>
+        <!-- Nurse Joy-esque avatar -->
+        <div class="hidden sm:block">
+            <div class="w-20 h-20 rounded-full ring-4 ring-rose-200 bg-gradient-to-br from-rose-300 to-rose-400 grid place-items-center">
+            <svg viewBox="0 0 100 100" class="w-12 h-12">
+                <!-- Simple heart with cross hint -->
+                <path d="M50 78 L20 48 C12 40 14 26 26 22 C34 20 40 24 50 34 C60 24 66 20 74 22 C86 26 88 40 80 48 Z"
+                    class="fill-rose-600"></path>
+                <rect x="47" y="40" width="6" height="18" class="fill-white"></rect>
+                <rect x="41" y="46" width="18" height="6" class="fill-white"></rect>
+            </svg>
+            </div>
+        </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+        <a routerLink="/"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-600 text-white hover:bg-rose-700 transition shadow-md">
+            <svg viewBox="0 0 24 24" class="w-5 h-5">
+            <path d="M4 12l8-8 8 8" class="fill-none stroke-white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 10v10h12V10" class="fill-none stroke-white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Return to lobby</span>
+        </a>
+
+        </div>
+
+    </div>
+
+    <!-- Footer strip -->
+    <div class="px-6 py-3 bg-rose-100 border-t border-rose-200 text-rose-800 text-sm">
+        Ward: Kanto | Nurse on duty: Joy | Status: Stable
+    </div>
+    </div>
+
+    <!-- Ambient deco -->
+    <div class="absolute -top-6 -left-6 w-12 h-12 rounded-full bg-white/60 ring-2 ring-rose-200 blur-sm"></div>
+    <div class="absolute -bottom-6 -right-8 w-16 h-16 rounded-full bg-rose-200/60 ring-2 ring-rose-300 blur-sm"></div>
+</div>
+</div>

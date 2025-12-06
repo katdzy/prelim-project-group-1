@@ -1,20 +1,14 @@
-// src/app/app-routing.module.ts
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { Home } from './home/home';
-import { About } from './about/about';
 import { Employee } from './employee/employee';
-import { Services } from './services/services';
+import { About } from './about/about';
+import { Services } from "./services/services";
+import { Pagenotfound } from './404/404';
 
-const routes: Routes = [
-  { path: '', component: Home},
-  { path: 'about', component: About},
-  { path: 'employee', component: Employee },
-  { path: 'services', component: Services }
+export const routes: Routes = [
+    { path: '', component: Home },
+    { path: 'staff', component: Employee },
+    { path: 'about', component: About },
+    { path: 'services', component: Services},
+    { path: '**', component: Pagenotfound}
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
