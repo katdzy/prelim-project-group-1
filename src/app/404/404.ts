@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-pagenotfound',
+  selector: 'app-404',
   imports: [],
-  templateUrl: './pagenotfound.html',
-  styleUrl: './pagenotfound.css',
+  templateUrl: './404.html',
+  styleUrl: './404.css',
 })
 export class Pagenotfound {
-
 }
