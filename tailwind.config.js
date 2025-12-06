@@ -4,8 +4,10 @@ module.exports = {
     ],
     theme: {
         extend: {
-            fontfamily: {
-                rp2: ['Ready Player 2', 'sans-serif'],
+            fontFamily: {
+                rp2: ['"Press Start 2P"', 'sans-serif'],
+                silkscreen: ['Silkscreen', 'sans-serif'],
+                'lexend-deca': ['"Lexend Deca"', 'sans-serif'],
             },
         }
     },
