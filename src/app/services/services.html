@@ -1,1 +1,280 @@
-<p>services works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      font-family: 'Lexend Deca', sans-serif;
+    }
+
+    h1 { font-family: 'Press Start 2P', cursive; font-size: 48px; }
+    h2, h3 { font-family: 'Silkscreen', cursive; }
+    h2.subheader { font-size: 36px; }
+    p { font-family: 'Lexend Deca', sans-serif; }
+
+    h1.header {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 48px;
+      color: #F5626B;      /* pink-red color */
+      text-align: center;   /* center horizontally */
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    h2.subheader {
+      font-family: 'Silkscreen', cursive;
+      font-size: 36px;
+      color: #F89CB4;       /* lighter pink */
+      text-align: center;    /* center horizontally */
+      margin-bottom: 30px;
+    }
+
+    h2.details-header {
+      font-family: 'Silkscreen', cursive;
+      font-size: 36px;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    /* Card rows */
+    .card-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    /* Service cards */
+    .service-card {
+      width: 320px;
+      height: 440px;
+      background: #F89CB4;
+      border-radius: 12px;
+      box-shadow: 12px 12px 0px #C6FEFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover { transform: translateY(-8px); background: #F5626B; }
+
+    .icon { width: 120px; margin-top: 15px; }
+    .title { font-size: 28px; color: #ffffff; margin-top: 15px; }
+    .desc { font-size: 16px; color: #ffffff; text-align: center; padding: 0 20px; margin-top: 8px; }
+
+    .more-btn {
+      font-family: 'Silkscreen', cursive;
+      font-size: 26px;
+      font-weight: bold;
+      background: #ffffff;
+      color: #F89CB4;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      margin-top: auto;
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .service-card:hover .more-btn { color: #F5626B; }
+
+    /* DETAILS SECTION */
+    .details-section {
+      background: #F89CB4;
+      padding: 50px 0 60px;
+      margin-top: 60px;
+    }
+
+    .details-header { font-size: 36px; margin-bottom: 50px; }
+
+    .detail-pair {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 20px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+
+    .detail-card-square {
+      width: 280px;
+      height: 240px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 12px 12px 0 #F5626B;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      transition: transform 0.25s ease;
+    }
+
+    .detail-card-rect {
+      width: 420px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 12px 12px 0 #F5626B;
+      padding: 15px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: transform 0.25s ease;
+    }
+
+    .detail-card-square:hover,
+    .detail-card-rect:hover { transform: scale(1.02); }
+
+    .detail-square-icon { width: 100px; }
+    .detail-square-title { font-size: 24px; margin-top: 10px; color: #F5626B; text-align: center; }
+    .detail-rect-title { font-size: 28px; color: #F5626B; margin-bottom: 8px; }
+    .detail-rect-desc { font-size: 16px; color: #333; }
+
+    @media (max-width: 900px) {
+      .service-card { width: 280px; height: auto; }
+      .detail-card-rect { width: 100%; }
+      .detail-card-square { width: 100%; max-width: 280px; }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">SERVICES</h1>
+  <h2 class="subheader">what we offer here!</h2>
+
+  <div class="card-row">
+    <div class="service-card">
+      <img src="assets/iconhealing.png" class="icon" alt="Healing icon" />
+      <h3 class="title">Healing</h3>
+      <p class="desc">Quickly restore your Pokémon to peak health with expert care and advanced healing methods.</p>
+      <button class="more-btn" data-target="healing">More</button>
+    </div>
+    <div class="service-card">
+      <img src="assets/iconstorage.png" class="icon" alt="Storage icon" />
+      <h3 class="title">Storage</h3>
+      <p class="desc">Safely keep your Pokémon in our organized PC system, ready for anytime retrieval.</p>
+      <button class="more-btn" data-target="storage">More</button>
+    </div>
+    <div class="service-card">
+      <img src="assets/icontrading.png" class="icon" alt="Trading icon" />
+      <h3 class="title">Trading</h3>
+      <p class="desc">Easily connect and trade Pokémon with trainers worldwide to complete your collection.</p>
+      <button class="more-btn" data-target="trading">More</button>
+    </div>
+  </div>
+
+  <div class="card-row">
+    <div class="service-card">
+      <img src="assets/iconbattling.png" class="icon" alt="Battling icon" />
+      <h3 class="title">Battling</h3>
+      <p class="desc">Engage in exciting battles to test your Pokémon’s skills against other trainers.</p>
+      <button class="more-btn" data-target="battling">More</button>
+    </div>
+    <div class="service-card">
+      <img src="assets/iconcommunication.png" class="icon" alt="Communication icon" />
+      <h3 class="title">Communication</h3>
+      <p class="desc">Stay in touch with fellow trainers through our fast and reliable network.</p>
+      <button class="more-btn" data-target="communication">More</button>
+    </div>
+  </div>
+
+  <!-- Detail Section -->
+  <section class="details-section">
+    <h2 class="details-header">Learn more</h2>
+
+    <div id="healing" class="detail-pair">
+      <div class="detail-card-square">
+        <img src="assets/iconhealingred.png" class="detail-square-icon">
+        <h3 class="detail-square-title">Healing</h3>
+      </div>
+      <div class="detail-card-rect">
+        <h3 class="detail-rect-title">Healing</h3>
+        <p class="detail-rect-desc">
+          Our Healing service ensures every Pokémon is returned to full health using state-of-the-art medical equipment and expert care. From minor injuries to full recovery, we make sure your Pokémon are ready for any challenge ahead. We also provide personalized care based on each Pokémon's unique needs and conditions.
+        </p>
+      </div>
+    </div>
+
+    <div id="storage" class="detail-pair">
+      <div class="detail-card-square">
+        <img src="assets/iconstoragered.png" class="detail-square-icon">
+        <h3 class="detail-square-title">Storage</h3>
+      </div>
+      <div class="detail-card-rect">
+        <h3 class="detail-rect-title">Storage</h3>
+        <p class="detail-rect-desc">
+          With our advanced PC system, your Pokémon are stored securely and organized efficiently. You can easily retrieve or swap your Pokémon at any time, giving you convenience and peace of mind. Each storage slot is monitored to ensure optimal conditions for your Pokémon's well-being.
+        </p>
+      </div>
+    </div>
+
+    <div id="trading" class="detail-pair">
+      <div class="detail-card-square">
+        <img src="assets/icontradingred.png" class="detail-square-icon">
+        <h3 class="detail-square-title">Trading</h3>
+      </div>
+      <div class="detail-card-rect">
+        <h3 class="detail-rect-title">Trading</h3>
+        <p class="detail-rect-desc">
+          Our Trading service connects trainers globally, allowing you to exchange Pokémon safely and fairly. Expand your team, complete your Pokédex, and experience the excitement of trading across regions. We also provide trade verification to prevent mistakes or accidental swaps.
+        </p>
+      </div>
+    </div>
+
+    <div id="battling" class="detail-pair">
+      <div class="detail-card-square">
+        <img src="assets/iconbattlingred.png" class="detail-square-icon">
+        <h3 class="detail-square-title">Battling</h3>
+      </div>
+      <div class="detail-card-rect">
+        <h3 class="detail-rect-title">Battling</h3>
+        <p class="detail-rect-desc">
+          Challenge yourself and your Pokémon in thrilling battles against trainers of all levels. Improve your skills, earn experience, and enjoy competitive fun in a safe and controlled environment. We also provide detailed battle reports to help you refine your strategies.
+        </p>
+      </div>
+    </div>
+
+    <div id="communication" class="detail-pair">
+      <div class="detail-card-square">
+        <img src="assets/iconcommunicationred.png" class="detail-square-icon">
+        <h3 class="detail-square-title">Communication</h3>
+      </div>
+      <div class="detail-card-rect">
+        <h3 class="detail-rect-title">Communication</h3>
+        <p class="detail-rect-desc">
+          Stay connected with other trainers through our fast and reliable communication network. Share tips, arrange trades, or just chat about your Pokémon adventures anytime, anywhere. Our network also supports group chats and notifications for events or important updates.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function scrollToSectionById(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const header = document.querySelector('.header');
+      const headerOffset = header ? header.offsetHeight + 20 : 20;
+      const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = Math.max(0, elementPosition - headerOffset);
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    }
+
+    document.querySelectorAll('.more-btn[data-target]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-target');
+        scrollToSectionById(target);
+      });
+    });
+  </script>
+</body>
+</html>
