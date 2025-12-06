@@ -1,1 +1,463 @@
-<p>home works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IrahozaDaniel - Digital Solutions Expert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i data-lucide="code" class="w-8 h-8 text-indigo-600 mr-2"></i>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                            <i data-lucide="home" class="w-4 h-4 mr-1"></i>Home
+                        </a>
+                        <a href="#about" class="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                            <i data-lucide="users" class="w-4 h-4 mr-1"></i>About
+                        </a>
+                        <a href="#services" class="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                            <i data-lucide="briefcase" class="w-4 h-4 mr-1"></i>Services
+                        </a>
+                        <a href="#contact" class="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-1"></i>Contact
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 hover:text-indigo-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
+            <div class="absolute top-3/4 right-1/4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style="animation-delay: 2s;"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8">
+            <div class="animate-fadeInUp">
+                <h1 class="text-5xl sm:text-7xl lg:text-8xl font-bold text-white mb-10" style="font-family: 'Press Start 2P', cursive; line-height: 1.2;">
+                HEAL BACK
+                <span class="block bg-gradient-to-r from-[#F5626B] to-[#F89CB4] bg-clip-text text-transparent">
+                    TO FULL HP!
+                </span>
+            </h1>
+
+<p class="text-indigo-100 mb-12 max-w-7xl mx-auto"
+   style="font-family: 'Silkscreen', cursive; line-height: 1.6; font-size: 20px;">
+    Your trusted partner in Pokémon healthcare. Whether it’s healing after battles, routine wellness checks, or specialized treatment, our professional medical staff is here to keep your Pokémon strong and happy.
+</p>
+
+
+
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <button class="bg-[#F5626B] text-white px-16 py-8 rounded-2xl font-bold text-2xl shadow-2xl hover:bg-[#F89CB4] transform hover:scale-105 transition-all duration-300 flex items-center justify-center" style="font-family: 'Press Start 2P', cursive;">
+                    HEAL NOW
+                </button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Our Company</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    We're passionate about delivering innovative solutions that help businesses thrive in the digital age.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 mb-6">
+                        We believe in the power of technology to transform businesses and create meaningful impact. Our team of experts works tirelessly to deliver solutions that not only meet your current needs but anticipate future challenges.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="flex items-center justify-center mb-2">
+                                <i data-lucide="trophy" class="w-6 h-6 text-indigo-600 mr-2"></i>
+                                <div class="text-3xl font-bold text-indigo-600">500+</div>
+                            </div>
+                            <div class="text-gray-600">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="flex items-center justify-center mb-2">
+                                <i data-lucide="heart" class="w-6 h-6 text-indigo-600 mr-2"></i>
+                                <div class="text-3xl font-bold text-indigo-600">98%</div>
+                            </div>
+                            <div class="text-gray-600">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-8 text-white">
+                        <h4 class="text-xl font-semibold mb-4 flex items-center">
+                            <i data-lucide="star" class="w-5 h-5 mr-2 text-indigo-200"></i>
+                            Why Choose Us?
+                        </h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-indigo-200"></i>
+                                Expert team with 10+ years experience
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-indigo-200"></i>
+                                24/7 customer support
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check-circle" class="w-5 h-5 mr-3 text-indigo-200"></i>
+                                Cutting-edge technology solutions
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive solutions tailored to your business needs
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-200 transition-colors">
+                        <i data-lucide="globe" class="w-6 h-6 text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Web Development</h3>
+                    <p class="text-gray-600 mb-6">
+                        Custom web applications built with modern technologies and responsive design principles.
+                    </p>
+                    <a href="#" class="text-indigo-600 font-medium hover:text-indigo-700 transition-colors flex items-center">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-200 transition-colors">
+                        <i data-lucide="smartphone" class="w-6 h-6 text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Mobile Apps</h3>
+                    <p class="text-gray-600 mb-6">
+                        Native and cross-platform mobile applications for iOS and Android devices.
+                    </p>
+                    <a href="#" class="text-indigo-600 font-medium hover:text-indigo-700 transition-colors flex items-center">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-200 transition-colors">
+                        <i data-lucide="cloud" class="w-6 h-6 text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Cloud Solutions</h3>
+                    <p class="text-gray-600 mb-6">
+                        Scalable cloud infrastructure and migration services for modern businesses.
+                    </p>
+                    <a href="#" class="text-indigo-600 font-medium hover:text-indigo-700 transition-colors flex items-center">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-indigo-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-xl text-indigo-200 max-w-2xl mx-auto">
+                    Ready to start your next project? Let's discuss how we can help you achieve your goals.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 flex items-center">
+                        <i data-lucide="map-pin" class="w-6 h-6 mr-3 text-indigo-300"></i>
+                        Contact Information
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i data-lucide="phone" class="w-6 h-6 mr-4 text-indigo-300"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="mail" class="w-6 h-6 mr-4 text-indigo-300"></i>
+                            <span>hello@innovatetech.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="map-pin" class="w-6 h-6 mr-4 text-indigo-300"></i>
+                            <span>123 Innovation Street, Tech City, TC 12345</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-indigo-800 border border-indigo-700 text-white placeholder-indigo-300 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg bg-indigo-800 border border-indigo-700 text-white placeholder-indigo-300 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <textarea rows="4" placeholder="Your Message" class="w-full px-4 py-3 rounded-lg bg-indigo-800 border border-indigo-700 text-white placeholder-indigo-300 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-white text-indigo-900 px-6 py-3 rounded-lg font-semibold hover:bg-indigo-50 transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
+                            <i data-lucide="send" class="w-5 h-5 mr-2"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="zap" class="w-8 h-8 text-indigo-400 mr-2"></i>
+                        <h3 class="text-2xl font-bold text-indigo-400">InnovateTech</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Transforming businesses through innovative technology solutions and professional expertise.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors">
+                            <i data-lucide="twitter" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors">
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors">
+                            <i data-lucide="facebook" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors">
+                            <i data-lucide="instagram" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Web Development</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Mobile Apps</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Cloud Solutions</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 InnovateTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white');
+                nav.classList.remove('bg-white/90');
+            } else {
+                nav.classList.add('bg-white/90');
+                nav.classList.remove('bg-white');
+            }
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+            observer.observe(section);
+        });
+    </script>
+
+    <!-- In <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&family=Lexend+Deca&display=swap" rel="stylesheet">
+<style>
+    /* Global fonts */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Press Start 2P', cursive;
+    }
+    .subtitle {
+        font-family: 'Silkscreen', cursive;
+    }
+    p {
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+    /* Hero background */
+    #home {
+        background: url('/assets/heroimg.png') no-repeat center center fixed;
+        background-size: cover;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    /* Overlay for readability */
+    #home::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5); /* dark overlay for contrast */
+        z-index: 1;
+    }
+
+    /* Hero content */
+    #home > div.relative {
+        position: relative;
+        z-index: 10;
+    }
+
+    /* Buttons */
+    .btn-primary {
+        background-color: #F5626B;
+        color: #FFFF;
+        font-family: 'Press Start 2P', cursive;
+    }
+    .btn-primary:hover {
+        background-color: #F89CB4;
+    }
+
+    .btn-glass {
+        backdrop-filter: blur(10px);
+        background: rgba(198, 254, 255, 0.1);
+        border: 1px solid rgba(198, 254, 255, 0.2);
+        color: #FFFF;
+    }
+    .btn-glass:hover {
+        background: rgba(198, 254, 255, 0.2);
+    }
+
+    /* Text shadows for hero headings */
+    #home h1 {
+        text-shadow: 2px 2px #F5626B;
+    }
+    #home p {
+        color: #C6FEFF;
+    }
+
+    /* Floating shapes */
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+</style>
+
+</body>
+</html>

@@ -1,8 +1,17 @@
 <nav class="navbar">
-  <a routerLink="/">Home</a>
-  <a routerLink="/about">About</a>
-  <a routerLink="/employee">Staff</a>
-  <a routerLink="/services">Services</a>
+  <div class="navbar-left">
+      <a class="navbar-left" routerLink="/">
+        <img src="assets/pokelogo.png" alt="Logo" class="logo" />
+        <span class="brand-name">POKEMON CENTER</span>
+      </a>
+  </div>
+
+  <div class="navbar-right">
+    <a routerLink="/">HOME</a>
+    <a routerLink="/about">ABOUT</a>
+    <a routerLink="/employee">STAFF</a>
+    <a routerLink="/services">SERVICES</a>
+  </div>
 </nav>
 
 <router-outlet></router-outlet>
