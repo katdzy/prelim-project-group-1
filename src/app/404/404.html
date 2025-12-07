@@ -4,24 +4,14 @@
 <div class="relative w-full max-w-xl">
 
     <div class="flex justify-center mb-6">
-<div class="flex items-center text-6xl font-black text-rose-600 font-'rp2'">
+<div class="flex items-center text-6xl font-black text-rose-600">
     <!-- First 4 -->
-    <span class="mr-2 font-rp2">4aa</span>
+    <span class="mr-2 text-7xl" style="font-family: 'Press Start 2P'">4</span>
 
-    <!-- Pokéball as the 0 -->
-    <svg viewBox="0 0 100 100" class="w-20 h-20 mx-1">
-    <!-- Outer circle -->
-    <circle cx="50" cy="50" r="48" class="fill-white stroke-rose-600" stroke-width="6"></circle>
-    <!-- Top half -->
-    <path d="M2 50a48 48 0 0 1 96 0H2z" class="fill-rose-500"></path>
-    <!-- Center band -->
-    <rect x="2" y="46" width="96" height="8" class="fill-rose-700"></rect>
-    <!-- Inner circle -->
-    <circle cx="50" cy="50" r="12" class="fill-white stroke-rose-700" stroke-width="4"></circle>
-    </svg>
+    <img src="assets/pokelogo.png" alt="pokemon logo" class="w-20 h-20"/>
 
     <!-- Last 4 -->
-    <span class="ml-2">4</span>
+    <span class="ml-5 text-7xl" style="font-family: 'Press Start 2P'">4</span>
 </div>
 </div>
 
@@ -31,7 +21,7 @@
     <div class="p-6 sm:p-8">
         <div class="flex items-start justify-between gap-4">
         <div>
-            <h1 class="text-5xl font-black tracking-tight text-rose-600">404</h1>
+            <h1 class="text-5xl font-black tracking-tight text-rose-600 font-[Silkscreen]"> ERROR 404</h1>
             <p class="mt-2 text-rose-800 font-semibold">Poké Center says this room doesn’t exist.</p>
             <p class="mt-1 text-rose-700/80">
             The hallway you’re looking for moved. Let’s get you healed up and back on the right path.
@@ -54,14 +44,14 @@
         <!-- Actions -->
         <div class="mt-6 flex flex-wrap items-center gap-3">
         <a routerLink="/"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-600 text-white hover:bg-rose-700 transition shadow-md">
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-rose-600 text-white hover:bg-rose-700 transition shadow-md cursor-pointer">
             <svg viewBox="0 0 24 24" class="w-5 h-5">
             <path d="M4 12l8-8 8 8" class="fill-none stroke-white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M6 10v10h12V10" class="fill-none stroke-white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <span>Return to lobby</span>
+            <span class="select-none">Return to lobby</span>
         </a>
-
+        <router-outlet></router-outlet>
         </div>
 
     </div>

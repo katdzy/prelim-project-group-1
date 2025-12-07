@@ -1,1 +1,48 @@
-<p>employee works!</p>
+<body>
+    <section class="text-center py-12 bg-gradient-to-r from-pink-50 to-pink-100">
+        <img src="assets/pokeball.svg" 
+            alt="Pokéball" 
+            class="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/4 w-64 opacity-20 pointer-events-none">
+        
+        <h1 class="text-4xl font-extrabold text-[#F5626B] mb-4 drop-shadow-md">
+            Meet Our Staff
+        </h1>
+        <p class="text-lg text-gray-700 max-w-xl mx-auto">
+            Welcome to our Pokémon Center! Here are the amazing nurses and helpers who take care of your Pokémon.
+        </p>
+    </section>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
+        <!-- Card Example -->
+        @for (staff of employees; track staff.id) {
+            <div class="bg-gradient-to-br from-pink-100 to-pink-300 rounded-2xl p-6 text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl relative overflow-hidden cursor-pointer"  
+            [class.ring-4]="glowingId === staff.id"
+            [class.ring-pink-400]="glowingId === staff.id"
+            [class.ring-offset-2]="glowingId === staff.id"
+            [class.ring-offset-white]="glowingId === staff.id"
+            (click)="playSound(staff)">
+            
+                <!-- Decorative Pokéball -->
+                <div class="absolute top-[-20px] right-[-20px] w-24 h-24 bg-blue-400 rounded-full opacity-20"></div>
+
+                    <img src="assets/{{staff.name}}.png" 
+                        alt="{{staff.name}}" 
+                        class="w-28 h-28 mx-auto rounded-full border-4 border-white object-cover mb-4 shadow-md">
+
+                    <h3 class="text-3xl font-bold text-[#FFFFFF] drop-shadow-md font-[Silkscreen]">{{staff.name}}</h3>
+                    <p class="text-gray-600 text-sm mb-4">{{staff.position}}</p>
+
+                    <div class="bg-[#C5FEFF]/50 rounded-lg p-3 text-sm text-gray-600 space-y-1">
+                        <p><strong>Email:</strong> {{ staff.email }}</p>
+                        <p><strong>Gender:</strong> {{ staff.gender }}</p>
+                        <p><strong>Status:</strong> {{ staff.status }}</p>
+                        <p><strong>Salary:</strong> ₱{{ staff.salary }}</p>
+                    </div>
+
+                <!-- Role Badge -->
+                <span class="absolute top-4 left-4 bg-white/70 text-pink-500 font-bold px-2 py-1 rounded-full text-xs shadow-md">{{staff.badge}}</span>
+            </div>
+        }
+        
+    </div>
+</body>
