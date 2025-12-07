@@ -7,5 +7,5 @@ import { RouterModule } from "@angular/router";
   templateUrl: './404.html',
   styleUrl: './404.css',
 })
-export class Pagenotfound {
+export class PageNotFound {
 }
